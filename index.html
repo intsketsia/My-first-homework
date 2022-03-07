@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      <span id="date"></span>
+      <div class="float-left">
+        <span class="temperature" id="temperature">☁️ 8</span>
+        <span class="units">°C | <a href="#" id="fahrenheit-link">°F</a></span>
+      </div>
+      <br />
+    </h1>
+
+    <h2 id="city">Ottawa</h2>
+
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="text"
+                placeholder="🔍Search city"
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+              />
+            </div>
+            <div class="col-3">
+              <input type="submit" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <button id="current-location-button">Current Location</button>
+
+    <h5>Last update 5 mins ago</h5>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
